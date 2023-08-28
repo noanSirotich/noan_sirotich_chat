@@ -1,0 +1,131 @@
+@import 'colors';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $primary-dark-color ;
+    background-attachment: fixed;
+    background-image: url(../media/background_image.png);
+    color: $primary-light-color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: $primary-dark-color;
+    
+}
+
+
+header {
+    background-color: $header-bg-color;   
+    position: fixed;
+    // display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 10%;
+    top: 0;
+    border-radius: 10px;
+    padding: 1px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    height: 50vh;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.central-elements {
+    // flex: 1;
+    padding: 10%;
+    margin: 1%;
+    border-radius: 5%;
+    // height: 20vh;
+
+
+    display: flex; /* Add flex display to create flex container */
+    flex-direction: column; /* Stack elements vertically */
+    // justify-content: flex-end; /* Push elements to the bottom */
+}
+
+div.msg-bubble {
+    height: unset;
+    padding: 5px;
+    color: $primary-dark-color;
+    font-size: large;
+    font-style: oblique;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+div.msg-incoming {
+    text-align: end;
+    margin-right: 25px;
+}
+
+#left-section {
+    background-color: $left-bg-color;
+    max-width: 15%;
+    height: 50vh;
+    width: 50vw;
+
+    display: flex; /* Add flex display to create flex container */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Adjust padding as needed */
+    justify-content: center;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+#mid-section {
+    background-color: $middle-bg-color;
+    max-width: 50%;
+    height: 50vh;
+    width: 80vw;
+
+    justify-content: flex-end; /* Push elements to the bottom */
+    display: flex; /* Add flex display to create flex container */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+#right-section {
+    background-color: $right-bg-color;
+    max-width: 15%;
+    height: 50vh;
+    // width: 25vw;
+
+    display: flex; /* Add flex display to create flex container */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+footer {
+    background-color: $footer-bg-color;
+    position: fixed;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 10vh;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 1px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.selected {
+    background-color: $primary-dark-color;
+    color: $primary-light-color;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+

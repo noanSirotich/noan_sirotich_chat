@@ -1,0 +1,75 @@
+@import 'colors';
+
+.login-container {
+    color: $primary-dark-color;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bold;
+}
+
+#username {
+    background-color: $primary-dark-color;
+    color: $primary-light-color;
+    padding: 20px;
+}
+
+#signInButton {
+    border-radius: 15px;
+    padding: 5px;
+    color: $primary-light-color;
+    background-color: $primary-dark-color;
+
+    &:hover {
+        cursor: pointer;
+        animation: button-pulse 1s infinite alternate, button-color 1s ease-in-out  forwards ;
+    }
+}
+
+@keyframes button-pulse {
+    0% {
+      transform: scale(1); 
+    }
+    100% {
+      transform: scale(1.1); 
+    }
+}
+
+@keyframes button-color {
+    0% {
+        background-color: $primary-dark-color;
+        color: $primary-light-color;
+    }
+
+    100% {
+        background-color: $primary-dark-color;
+        color: $primary-color;
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label,
+.login-container input,
+.login-container button {
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none !important;
+}

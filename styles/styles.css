@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  background-attachment: fixed;
+  background-image: url(../media/background_image.png);
+  color: #c8c3c3;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: rgba(127, 255, 212, 0.5);
+  position: fixed;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 10%;
+  top: 0;
+  border-radius: 10px;
+  padding: 1px 0;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  height: 50vh;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-elements {
+  padding: 10%;
+  margin: 1%;
+  border-radius: 5%;
+  display: flex; /* Add flex display to create flex container */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+div.msg-bubble {
+  height: unset;
+  padding: 5px;
+  color: #333;
+  font-size: large;
+  font-style: oblique;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+div.msg-incoming {
+  text-align: end;
+  margin-right: 25px;
+}
+
+#left-section {
+  background-color: rgba(127, 255, 212, 0.5);
+  max-width: 15%;
+  height: 50vh;
+  width: 50vw;
+  display: flex; /* Add flex display to create flex container */
+  flex-direction: column; /* Stack elements vertically */
+  padding: 20px; /* Adjust padding as needed */
+  justify-content: center;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#mid-section {
+  background-color: rgba(127, 255, 212, 0.5);
+  max-width: 50%;
+  height: 50vh;
+  width: 80vw;
+  justify-content: flex-end; /* Push elements to the bottom */
+  display: flex; /* Add flex display to create flex container */
+  flex-direction: column; /* Stack elements vertically */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+#right-section {
+  background-color: rgba(127, 255, 212, 0.5);
+  max-width: 15%;
+  height: 50vh;
+  display: flex; /* Add flex display to create flex container */
+  flex-direction: column; /* Stack elements vertically */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+footer {
+  background-color: rgba(127, 255, 212, 0.5);
+  position: fixed;
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 10vh;
+  bottom: 0;
+  border-radius: 10px;
+  padding: 1px 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.selected {
+  background-color: #333;
+  color: #c8c3c3;
+  border-radius: 25px;
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */

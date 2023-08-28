@@ -1,0 +1,63 @@
+.login-container {
+  color: #333;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(127, 255, 212, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: larger;
+  font-weight: bold;
+}
+
+#username {
+  background-color: #333;
+  color: #c8c3c3;
+  padding: 20px;
+}
+
+#signInButton {
+  border-radius: 15px;
+  padding: 5px;
+  color: #c8c3c3;
+  background-color: #333;
+}
+#signInButton:hover {
+  cursor: pointer;
+  animation: button-pulse 1s infinite alternate, button-color 1s ease-in-out forwards;
+}
+
+@keyframes button-pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes button-color {
+  0% {
+    background-color: #333;
+    color: #c8c3c3;
+  }
+  100% {
+    background-color: #333;
+    color: rgba(127, 255, 212, 0.5);
+  }
+}
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label,
+.login-container input,
+.login-container button {
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none !important;
+}/*# sourceMappingURL=login.css.map */
