@@ -36,24 +36,33 @@ main {
 .central-elements {
   padding: 10%;
   margin: 1%;
-  border-radius: 5%;
+  border-radius: 15px;
   display: flex; /* Add flex display to create flex container */
   flex-direction: column; /* Stack elements vertically */
 }
 
 div.msg-bubble {
   height: unset;
-  padding: 5px;
-  color: #333;
+  padding: 8px;
+  margin: 5px;
+  color: whitesmoke;
   font-size: large;
-  font-style: oblique;
-  font-weight: bold;
+  font-style: italic;
   word-wrap: break-word;
+}
+
+div.msg-username {
+  color: #333;
+}
+
+div.msg-text {
+  background-color: rgba(51, 51, 51, 0.9);
+  border-radius: 8px;
+  padding: 5px;
 }
 
 div.msg-incoming {
   text-align: end;
-  margin-right: 25px;
 }
 
 #left-section {

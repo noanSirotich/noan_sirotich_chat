@@ -9,17 +9,41 @@ const messagesDiv = document.getElementById('messages');
 
 
 
-// 
+// show messages
+// function displayMessage(message) {
+//     const messageElement = document.createElement('div');
+//     messageElement.classList.add('msg-bubble');
+//     if (message.data.user !== username ) {
+//         messageElement.classList.add('msg-incoming');
+//     };
+//     messageElement.textContent = `${message.data.user}: ${message.data.msg}`;
+//     messagesDiv.appendChild(messageElement);
+//     messagesDiv.scrollTop = messagesDiv.scrollHeight;
+// };
+
 function displayMessage(message) {
     const messageElement = document.createElement('div');
     messageElement.classList.add('msg-bubble');
-    if (message.data.user !== username ) {
+    
+    const userElement = document.createElement('div');
+    userElement.classList.add('msg-username'); // class for styling the username
+    userElement.textContent = `~~ ${message.data.user} ~~`;
+    
+    const messageTextElement = document.createElement('div');
+    messageTextElement.classList.add('msg-text'); // class for styling the message text
+    messageTextElement.textContent = message.data.msg;
+    
+    messageElement.appendChild(userElement);
+    messageElement.appendChild(messageTextElement);
+    
+    if (message.data.user !== username) {
         messageElement.classList.add('msg-incoming');
-    };
-    messageElement.textContent = `${message.data.user}: ${message.data.msg}`;
+    }
+    
     messagesDiv.appendChild(messageElement);
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
-};
+}
+
 
 // delete msgess
 
