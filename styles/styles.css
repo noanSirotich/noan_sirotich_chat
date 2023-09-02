@@ -4,7 +4,7 @@ body {
   background-color: #333;
   background-attachment: fixed;
   background-image: url(../media/background_image.png);
-  color: #c8c3c3;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -107,7 +107,7 @@ footer {
 
 .selected {
   background-color: #333;
-  color: #c8c3c3;
+  color: whitesmoke;
   border-radius: 25px;
   padding: 10px;
 }/*# sourceMappingURL=styles.css.map */
