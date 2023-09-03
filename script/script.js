@@ -12,4 +12,20 @@ loginForm.addEventListener('submit', function (e) {
     messageInput.focus()
 });
 
+// send button text
 
+const sendButtonText = document.getElementById('send-msg');
+const originalText = sendButtonText.textContent;
+
+sendButtonText.addEventListener('mouseover', () => {
+    sendButtonText.textContent = 'Sure?';
+});
+
+sendButtonText.addEventListener('mouseleave', () => {
+    sendButtonText.textContent = originalText;
+});
+
+sendButtonText.addEventListener('mouseup', () => {
+    sendButtonText.textContent = 'Sent!';
+    sendButton.clicked = true;
+});

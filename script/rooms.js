@@ -1,3 +1,4 @@
+// selecting rooms
 const rooms = ['General', 'Science', 'Sport'];
 let selectedRoom = rooms[0];
 const roomContainer = document.getElementById('left-section');
@@ -40,3 +41,4 @@ function changeRooms(destRoom) {
 generateRooms(rooms);
 
 
+// members in the room

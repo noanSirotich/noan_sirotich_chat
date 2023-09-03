@@ -34,7 +34,7 @@
   padding: 10px;
   margin-right: 10px; /* Add some space between input and button */
   background-color: #333;
-  color: whitesmoke;
+  color: #EEEEEE;
 }
 
 #send-msg {
@@ -42,7 +42,7 @@
   background-color: #333;
   width: 4vw;
   height: 4vh;
-  color: whitesmoke;
+  color: #EEEEEE;
 }
 #send-msg:hover {
   cursor: pointer;
@@ -55,6 +55,6 @@
   }
   100% {
     transform: scale(1.2);
-    color: rgba(127, 255, 212, 0.5);
+    color: rgba(109, 157, 202, 0.5);
   }
 }/*# sourceMappingURL=sc.css.map */

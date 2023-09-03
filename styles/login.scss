@@ -12,6 +12,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     font-size: larger;
     font-weight: bold;
+    border: 2px inset white;
 }
 
 #username {
@@ -30,6 +31,8 @@
         cursor: pointer;
         animation: button-pulse 1s infinite alternate, button-color 1s ease-in-out  forwards ;
     }
+
+
 }
 
 @keyframes button-pulse {

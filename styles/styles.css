@@ -4,17 +4,17 @@ body {
   background-color: #333;
   background-attachment: fixed;
   background-image: url(../media/background_image.png);
-  color: whitesmoke;
+  color: #EEEEEE;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: sans-serif;
-  color: #333;
+  color: #EEEEEE;
 }
 
 header {
-  background-color: rgba(127, 255, 212, 0.5);
-  position: fixed;
+  background-color: rgba(109, 157, 202, 0.5);
+  display: inline-block;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -23,6 +23,7 @@ header {
   border-radius: 10px;
   padding: 1px 0;
   text-align: center;
+  border: 2px inset white;
 }
 
 main {
@@ -37,6 +38,7 @@ main {
   padding: 10%;
   margin: 1%;
   border-radius: 15px;
+  border: 2px inset white;
   display: flex; /* Add flex display to create flex container */
   flex-direction: column; /* Stack elements vertically */
 }
@@ -45,20 +47,21 @@ div.msg-bubble {
   height: unset;
   padding: 8px;
   margin: 5px;
-  color: whitesmoke;
+  color: #EEEEEE;
   font-size: large;
   font-style: italic;
   word-wrap: break-word;
 }
 
 div.msg-username {
-  color: #333;
+  color: #EEEEEE;
 }
 
 div.msg-text {
   background-color: rgba(51, 51, 51, 0.9);
   border-radius: 8px;
   padding: 5px;
+  display: inline-block;
 }
 
 div.msg-incoming {
@@ -66,7 +69,7 @@ div.msg-incoming {
 }
 
 #left-section {
-  background-color: rgba(127, 255, 212, 0.5);
+  background-color: rgba(109, 157, 202, 0.5);
   max-width: 15%;
   height: 50vh;
   width: 50vw;
@@ -80,7 +83,7 @@ div.msg-incoming {
 }
 
 #mid-section {
-  background-color: rgba(127, 255, 212, 0.5);
+  background-color: rgba(109, 157, 202, 0.5);
   max-width: 50%;
   height: 50vh;
   width: 80vw;
@@ -91,7 +94,7 @@ div.msg-incoming {
 }
 
 #right-section {
-  background-color: rgba(127, 255, 212, 0.5);
+  background-color: rgba(109, 157, 202, 0.5);
   max-width: 15%;
   height: 50vh;
   display: flex; /* Add flex display to create flex container */
@@ -100,7 +103,7 @@ div.msg-incoming {
 }
 
 footer {
-  background-color: rgba(127, 255, 212, 0.5);
+  background-color: rgba(109, 157, 202, 0.5);
   position: fixed;
   display: flex;
   width: 80%;
@@ -112,11 +115,12 @@ footer {
   padding: 1px 0;
   text-align: center;
   justify-content: center;
+  border: 2px inset white;
 }
 
 .selected {
   background-color: #333;
-  color: whitesmoke;
+  color: #EEEEEE;
   border-radius: 25px;
   padding: 10px;
 }/*# sourceMappingURL=styles.css.map */
