@@ -59,17 +59,16 @@
 
     &:hover {
       cursor: pointer;
-      animation: btn-send 1s infinite alternate;
+      animation: btn-spin 1s forwards;
     }
 }
 
-@keyframes btn-send {
+@keyframes btn-spin {
   0% {
-    transform: scale(1);
-
+    transform: rotate(0deg);
   }
   100% {
-    transform: scale(1.2);
+    transform: rotate(360deg);
     color: $primary-color;
   }
 }

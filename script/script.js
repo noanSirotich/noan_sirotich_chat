@@ -27,5 +27,25 @@ sendButtonText.addEventListener('mouseleave', () => {
 
 sendButtonText.addEventListener('mouseup', () => {
     sendButtonText.textContent = 'Sent!';
-    sendButton.clicked = true;
+    // sendButton.clicked = true;
+});
+
+// header text to refer to user
+
+const welcomeUser = document.querySelector('h1');
+// const originalHeaderText = welcomeUser.textContent;
+const usernameInput = document.getElementById('username');
+const signInButton = document.getElementById('signInButton');
+
+function usernameWelcomeText() {
+    if (usernameInput.value === '') {
+        welcomeUser.textContent = originalHeaderText;
+        
+    } else {
+        welcomeUser.innerHTML = `Welcome to Wonderous ${usernameInput.value}'s Chat  `
+    }
+};
+
+signInButton.addEventListener('click', () => {
+    usernameWelcomeText();
 });
